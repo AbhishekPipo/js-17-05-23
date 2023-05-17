@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//4+'6' using map 
+//         let arr = [1, 2, 3, 4];
+// arr[arr.length - 1] = parseInt(arr[arr.length - 1] + '6');
+// let numbers = arr.map((x) => {
+//   return parseInt(x);
+// });
+
+// console.log(arr);
+
+// function x(){
+//     console.log("x func");
+// }
+
+// function y(x){
+//     console.log("i am call back function and i am going to call y")
+//     x();
+// }
+
+// function sumInput() {
+//   let numbers = [];
+
+//   while (true) {
+//     let input = prompt('Enter a number:');
+    
+//     if (isNaN(input)) {
+//       break;
+//     }
+
+//     numbers.push(Number(input));
+//   }
+
+//   return numbers.reduce((sum, number) => sum + number, 0);
+// }
+
+// let result = sumInput();
+// alert(`sum: ${result}`);
+
+
+/** @1.check whether given args is array or not
+ **/
+
+
+// function is_arr(args) {
+//   return Array.isArray(args);
+// }
+
+// console.log(is_arr('str')); // false
+
+// console.log(is_arr([1,2,3]));
+
+/**@2clone a array 
+ * */
+// function arr_clone(args){
+// return Array.isArray(args)?  Array(args) : "entered is not an array";
+// }
+
+// let arr=arr_clone([1,23,4]);
+// console.log(arr);
+
+
+/**@return first element
+ * */
+
+//  var first =  function(array, n) {
+//       if (array == null) 
+//       return void 0;
+//     if (n == null) 
+//       return array[0];
+//     if (n < 0)
+//       return [];
+//     return array.slice(0, n);
+//   };
+
+// console.log(first([7, 9, 0, -2]));
+// console.log(first([],3));
+// console.log(first([7, 9, 0, -2],3));
+// console.log(first([7, 9, 0, -2],6));
+// console.log(first([7, 9, 0, -2],-3));
+
+
+/**@to get fisrt element from array
+// function first_ele(args, defaultValue) {
+//   if (args.length === 0) {
+//     return [];
+//   } else if (defaultValue !== undefined) {
+//     return args.slice(0, defaultValue);
+//   } else {
+//     return args[0];
+//   }
+// }
+
+// console.log(first_ele([7, 9, 0, -2])); // Output: 7
+// console.log(first_ele([], 3)); // Output: []
+// console.log(first_ele([7, 9, 0, -2], 3)); // Output: [7, 9, 0]
+// console.log(first_ele([7, 9, 0, -2], 6)); // Output: [7, 9, 0, -2]
+// console.log(first_ele([7, 9, 0, -2], -3)); // Output: []
+**/
+
+
+/**@return last element from args
+ * */
+//  function last(arr, n) {
+//   if (n === undefined) {
+//     return arr[arr.length - 1];
+//   } else {
+//     return arr.slice(Math.max(arr.length - n, 0));
+//   }
+// }
+
+// console.log(last([7, 9, 0, -2])); // Output: -2
+// console.log(last([7, 9, 0, -2], 3)); // Output: [9, 0, -2]
+// console.log(last([7, 9, 0, -2], 6)); // Output: [7, 9, 0, -2]
+
+
+// let arr=[1,2,3,4];
+
+// let sum=arr.reduce((total,num)=>{return total+num})
+
+// console.log(sum);
+
+
+// let fruits=["orange","mango","kiwi","ok"];
+// let res=fruits.slice(1,2)
+// console.log(fruits)
+// console.log(res);
+
+
+// let ages=[12,34,50,60];
+// let voters=ages.filter(x=>x>=18);
+// console.log(voters);
+
+
+// let lang=["java","javascript","python"];
+
+
+// let res=lang.filter(x=>x.includes("t"));
+// console.log(res)
+
+
+// let str = "farhan pasha";
+// let chars = str.split('');
+
+// let repeatedChars = Array.from(new Set(chars.filter((char, index) => chars.indexOf(char) !== index)));
+
+// console.log(repeatedChars); // Output: ['a', 'h']
+
+
+// let str = "farhan pasha";
+// let chars = str.split('');
+
+// let repeatedChars = Array.from(new Set(chars.filter((char, index) => chars.indexOf(char) !== index)));// chars.filter((char, index) => chars.indexOf(char) !== index) filters the chars array to only include elements for which the index of the first occurrence of the element (chars.indexOf(char)) is not equal to the current index. In simpler terms, it keeps only the elements that appear more than once in the array. This will result in a new array: ['a', 'h', 'a'].[a,h,a]=> {a,h}=> Arra.from(new Set)=> [a,h]
+
+// console.log(repeatedChars); // Output: ['a', 'h']
+
+    </script>
+</body>
+</html>
